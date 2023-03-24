@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro Desafio DIO</title>
+  </head>
+  <body>
+    <h1 id="Início">Entendendo o HTML5</h1>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+      <li><a href="#comunicacão-clientxserver">Comunicação Client x Server</a></li>
+      <li><a href="#Aplicações-web">Aplicações Web</a></li>
+      <li><a href="#O-HTML-e-suas-tags">O HTML e suas Tags</a></li>
+      <li><a href="#Links-e-atributos">Links e Atributos</a><ul>
+        <li><a href="#Atributo-href">Atributo href</a></li>
+        <li><a href="#Atributo-target">Atributo target</a></li>
+        <li><a href="#Atributo-tittle">Atributo tittle</a></li>
+      </ul></li>
+    <li><a href="#Ancoragem">Criando âncoras com os links HTML</a></li>
+    <li><a href="#Referências">Referências</a></li>
+    </ul>
+    <h2 id="comunicacão-clientxserver">Comunicação Client x Server</h2>
+    <p>
+        <strong>Client Server</strong> é um modelo de comunicação que vincula vários dispositivos através de uma
+        rede, nesse contexto o cliente faz solicitações de serviços ao servidor
+        que é responsável por atender a esses requisitos.
+      </p>
+    <small><a href="#Início">Voltar para o início</a></small>
+    
+    <h3>Client</h3>
+    <p>
+      É o que sempre inicia a comunicação com o servidor, o mais conhecido é o
+      navegador, uma requisição é disparada pela internet para o computador (O
+      servidor) no qual o site está hospedado.
+    </p>
+    <p>
+      Chamamos as aplicações que agem em nome do usuário, assim como o navegador
+      de <mark><i>user-agent</i></mark>.
+    </p>
+
+    <img src="./img/comunicacao.png" alt="Comunicação Client Server" />
+    <figcaption>Comunicação entre o usuário e o servidor através da internet por meio de um user-agent.</figcaption>
+    <p>Após enviar uma requisição, o user agent aguarda até que haja uma resposta do servidor e então a comunicação se encerra.
+    </br><sub>Para obter um novo recurso do servidor o cliente deve inciar uma nova requisição.</sub></p>
+    <h3>Server</h3>
+    <p>O papel do servidor web é receber uma requisição e devolver uma resposta para o <b>Client</b>.</p>
+    <p>Geralmente o servidor não envia dados se o <b>Client</b> não disparar primeiro uma requisição.</p>
+    <p>O Servidor é um ou mais computadores com um único endereço, e nesses computadores podem ser hospedados documentos, imagens, vídeos, áudios e etc.</p>
+    <p>Também hospeda programas que atendem as requisições dos clientes e as processam. Chamamos esses programas de <b>Web Server</b> ou <b>Servidor Web</b>.</p>
+    <p>É com um <b>Web Server</b> que nos comunicamos, sendo o computador no qual ele está instalado parte da insfraestrutura que o conecta a internet.</p>
+    <p>O <b>Web Server</b> é capaz de executar aplicações escritas em inguagens como PHP, C#, Java, etc.</p>
+    <img src="./img/comunicacao_servidor.png" alt="Comunicação no Servidor"/>
+    <blockquote><p>Por exemplo, um servidor executando o PHP pode delegar a esse programa a tarefa de atender as requisições cliando páginas HTML a partir de scripts escritos nessa linguagem.</p></blockquote>
+    <h2 id="Aplicações-web">Aplicações Web</h2>
+    <small><a href="#Início">Voltar para o início</a></small>
+    <p>São soluções criadas que possuem a internet como meio de comunicação entre <b>Client x Server</b> não sendo necessário a sua instalação.</p>
+    <h3>Como funciona o HTML - Introdução Básica</h3>
+    <h3 id="O-HTML-e-suas-tags">O HTML e suas Tags</h3>
+    <p>O HTML existe desde 1991 e atualmente está na versão 5, que veio recheada de recursos e funcionalidades que trazem melhorias para o desenvolvimento web, sua responsabilidade principal é demarcar a estrutura de uma página da web. Essa estrutura do HTML é formada por um conjunto de elementos, ou seja, os hipertextos, que se conectam entre si formando a página. Os elementos HTML ou também chamados de tags HTML, são utilizados para informar ao navegador que tipo de <strong>estrutura</strong> é essa que está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros.</p>
+    <p>Dessa forma, para que um documento seja interpretado pelo navegador, é necessário que o arquivo tenha a extensão <i>.html</i> e a partir disso, poderá ser exibido por qualquer navegador web.</p>
+    <p>As tags são formadas por uma estrutura própria, iniciam com o sinal <i>“menor que”</i>,  em seguida vem o nome daquele elemento e por fim, o sinal <i>“maior que”</i>. Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas <i>(self-closing)</i>. O fechamento de uma tag será definido com uma barra <i>(/)</i>, sendo que no caso das tags de auto fechamento, não há necessidade da presença desse caractere.</p>
+    <small><a href="#Início">Voltar para o início</a></small>
+    <h3>Tags</h3>
+    <!-- Para exibir as tags sem executá-las escrevi os sinais de maior e menor (< e >) de uma maneira que não sejam reconhecidos, os códigos irão imprimir os símbolos de forma que não sejam interpretados pelo navegador -->
+    <h4>&lt;!DOCTYPE html&gt;</h4>
+    <p>Informa ao navegador que esse documento é do tipo HTML e sua versão. Quando está escrito apenas html, indica que é a mais recente...</p>
+    <h4>&lt;html&gt;</h4>
+    <p>Representa a raiz do documento, serve com um container que engloba todos os outros elementos HTML.</p>
+    <h4>&lt;body&gt;</h4>
+    <p>É onde fica todo o conteúdo de texto, imagem e vídeos, em que o usuário vê e interage, nele os conteúdos são estruturados pelas demais tags do HTML.</p>
+    <h4>&lt;script&gt;</h4>
+    <p>Esse elemento contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src.</p>
+    <h4>&lt;head&gt;</h4>
+    <p>Compreende as informações do documento que serão interpretadas pelo navegador (metadados). Como por exemplo, título do documento, links para folhas de estilo etc.</p>
+    <h4>&lt;meta&gt;</h4>
+    <p>Define metadados, ou seja, informações sobre dados de um documento HTML. As <code><meta></code> tags vão dentro do elemento <code><head></code> e são usadas para especificar o conjunto de caracteres, o autor do documento, as configurações da janela de visualização etc.</p>
+    <h4>&lt;link&gt;</h4>
+    <p>É uma tag vazia, que contém apenas atributos e faz a relação do documento HTML com recursos externos, é comumente usado para vincular uma folha de estilo externa, também é usada para definir o favicon da página (ícone da aba do navegador), como outros recursos.</p>
+    <h4>&lt;style&gt;</h4>
+    <p>Essa tag é usada para declarar estilos (CSS) para um documento.</p>
+    <h4>&lt;Tags Semânticas&gt;</h4>
+    <p>Tags semânticas são tags que possuem um significado, que dão sentido a informação de texto ao navegador e buscadores, como por exemplo, utilizar a tag &lt;header&gt; para cabeçalhos ou &lt;article&gt; para dar um significado de artigo para aquele bloco de texto, até mesmo &lt;p&gt; para indicar que aquele texto é um parágrafo, é uma boa prática tentar sempre utilizar essas tags semânticas para ajudar no entendimento do código, além de ajudar muito no SEO do site (Otimização para motores de busca, é o que ajuda o seu site a se rankear melhor nos motores de buscas como o Google). Segue abaixo a lista de tags semânticas citadas durante o artigo:</p>
+        <ul>
+            <li>&lt;header&gt;</li>
+            <li>&lt;main&gt;</li>
+            <li>&lt;footer&gt;</li>
+            <li>&lt;section&gt;</li>
+            <li>&lt;article&gt;</li>
+            <li>&lt;aside&gt;</li>
+            <li>&lt;nav&gt;</li>
+            <li>&lt;ol&gt;</li>
+            <li>&lt;ul&gt;</li>
+            <li><code>&lt;li&gt;</code></li>           
+        </ul>
+    <small><a href="#Início">Voltar para o início</a></small>
+    <h3 id="Links-e-atributos">Links e Atributos</h3>
+    <h4>Links</h4>
+    <p>Desde a origem da internet, o que torna a web o que ela é hoje é justamente a possibilidade de vincular um documento a qualquer outro documento ou recurso. Essa função é chamada de hiperlink ou link. Mas afinal de contas, o que são os links HTML?</p>
+    <p>O link HTML, nada mais é que uma função do HTML que permite inserir os hiperlinks em diversos elementos, como textos e imagens. Um link precisa sempre apontar para uma URL (endereço) existente em seu site. Caso contrário, você poderá obter uma mensagem de erro 404.</p>
+    <p>A tag link do HTML está presente desde a primeira versão, criada por Tim Berners-Lee.</p>
+    <h4>Como fazer um link em HTML</h4>
+    <p>No HTML, os links são definidos pela tag &lt;a&gt;. Dentro dessa tag incluímos o atributo href (Hypertext Reference), que é o endereço de destino do link. Dentro do conteúdo da tag <a>, incluímos então o texto ou elemento que servirá como redirecionador, ou seja, que ao ser clicado, executará a função de redirecionar para o endereço dentro do atributo href.
+
+        <br>Dessa forma, a sintaxe básica do HTML link é:
+
+        <br>&lt;a href="url">Exemplo&lt;/a&gt;
+
+    <h4 id="Atributo-href">Atributo href</h4>
+    <p>Através do atributo principal da tag &lt;a&gt;, o href=””, podemos redirecionar o usuário a outro documento ou recurso. Existem três diferentes tipos de links utilizados para redirecionamento dentro do href. Um link pode ser:</p>
+    <ul>
+        <li>interno: redireciona para um elemento dentro da mesma página;</li>
+        <li>local: utilizamos para páginas contendo o mesmo domínio, ou seja, entre páginas do mesmo site;</li>
+        <li>global: utilizamos para páginas de outros domínios, ou seja, de fora do site.</li>
+    </ul>
+    <p>Alguns exemplos de como podem ser utilizados:</p>
+    <p>Interno - &lt;a href="#contato">&gt;Contato&lt;/a&gt;
+        Redirecionará ao elemento âncora contato.</p>    
+    <p>Local - &lt;a href="../pages/pagina2.html"&gt;&lt;/a&gt;
+       Redirecionará ao arquivo pagina2.html pertencente à pasta pages.</p>   
+    <p>Global - &lt;a href="http://www.google.com/"&gt;&lt;/a&gt;
+       Redirecionará à pagina inicial do Google</p>
+       <small><a href="#Início">Voltar para o início</a></small>
+    <h4 id="Atributo-target">Atributo target</h4>
+    <p>Além do atributo href, também podemos incluir o atributo target dentro da tag &lt;a&gt;. Esse atributo informa ao navegador como o redirecionamento deverá ocorrer, abrindo a página na mesma janela/aba do navegador ou abrindo uma nova janela/aba.</p>
+    <p>Os atributos targ são:</p>
+    <ul>
+        <li>_blank: abre a página em uma nova janela/aba;</li>
+        <li>_self: abre a página na mesma janela;</li>
+        <li>_parent: abre a página na mesma janela do link;</li>
+        <li>_top: cancela todos os demais frames e abre a nova página no mesmo navegador.</li>
+    </ul><small><a href="#Início">Voltar para o início</a></small>
+    <h4 id="Atributo-tittle">Atributo tittle</h4>
+    <p>O atributo title permite escrever um texto que aparecerá apenas quando passarmos o mouse por cima do link. Portanto, é um atributo importante que nos permite digitar informações úteis suplementares sobre o link, como o tipo de informação que a página contém ou avisos.</p>
+    <p>Veja um exemplo de como podemos utilizar esse atributo.</p>
+    <!-- Aqui o código foi repetido duas vezes, um para demonstrar sua função no qual não será reconhecido pelo navegador e outro código funcional para ser executado pelo navegador -->
+    <p>&lt;a href="" title="Exemplo de como funciona o atributo title"&gt;&lt;/a&gt;</p>
+    <p>Com esse código, nosso resultado será: <a href="" title="Exemplo de como funciona o atributo title">Confira como funciona o atributo title!</a></p>
+    <small><a href="#Início">Voltar para o início</a></small>
+    <h3 id="Ancoragem">Criando âncoras com os links HTML</h3>
+    <p>Conforme o que foi explicado no tópico “O atributo href”, uma das possibilidades de utilizar o link HTML é através do redirecionamento interno, processo que também é conhecido como âncora. Para isso, utilizamos a tag <a> para linkar duas seções da mesma página. Além disso, podemos nomear a seção ou atribuir um ID a um determinado elemento, e assim, através da âncora, acontecerá o redirecionamento ao elemento.</p>
+    <p>Um ótimo exemplo de utilização desse processo, se encontra no inicio desse artigo: ao clicar nos links de qualquer um dos tópicos, você é redirecionado para essa posição! Este recurso também é muito utilizado dentro de menus de páginas únicas e landing pages.</p>
+    <p>Confira o exemplo a seguir, utilizando como base o seguinte código:</p>
+    <!-- Aqui o código foi repetido duas vezes, um para demonstrar sua função no qual não será reconhecido pelo navegador e outro código funcional para ser executado pelo navegador -->
+    <p>&lt; href="#Início">Entendendo o HTML5&lt;/a&gt; <br>Este código nos resultará este link:<a href="#Início"> Ir para o início da página</a></p>
+    <hr>
+    <h3 id="Referências">Referências</h3>
+    <blockquote>Estas foram as referências que utilizei neste desafio:<br><a href="https://www.devmedia.com.br/http-cliente-e-servidor/41215" target="_blank" title="Comunicação Client x Server">Dev Media</a><br>
+    <a href="https://www.homehost.com.br/blog/tutoriais/links-html/#topo" target="_blank" title="Tags e Atributos">Homehost</a>
+    </blockquote>
+    
+
+
+    </body>
+
+
+</html>
