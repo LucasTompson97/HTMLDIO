@@ -1,6 +1,6 @@
-# Repositório para os desafios da formação HTML Developer da DIO - Digital Innovation One
+# Primeiro desafio da formação HTML Developer da DIO - Digital Innovation One
 
-## Primeiro Desafio:
+
 ![Primeiro_Desafio_DIO](https://user-images.githubusercontent.com/40512508/227723588-9e6eadf8-e646-4ffb-af6f-0c358dced5ee.jpg)
 >Status: Concluído :heavy_check_mark:
 
