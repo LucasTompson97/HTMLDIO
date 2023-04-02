@@ -31,7 +31,7 @@ A ideia deste Desafio de Projeto é elaborar um website, utilizando uma estrutur
 
 
 
-<h4>Tecnologias usadas nos Desafios:</h4>
+<h4>Tecnologias usadas no Desafio:</h4>
 
 <table>
  <tr>
